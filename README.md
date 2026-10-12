@@ -35,11 +35,13 @@ Tools like Wispr Flow and Superwhisper made voice typing fast, but they are paid
 - **Voice commands:** "comma", "full stop", "question mark", "exclamation mark", "inverted commas", "new line", "new paragraph", "all caps"
 - **"Strike that"** deletes the sentence you just said
 - **Filler words removed:** um, uh, er
+- **Learns your words:** a personal dictionary picks up names and non-English words (like the Tamil *kutti*) automatically, and learns from any word you fix right after dictating. It ships with a starter pack of common Indian words.
 - **Self-correction (Mac):** *"Let's meet Friday, no actually Thursday at 3, I mean 3:30"* becomes *"Let's meet Thursday at 3:30"*, using Apple's on-device AI
 
 **Designed to disappear**
 - A small translucent pill with a live waveform that you can drag anywhere. It turns vertical at the screen edges.
 - Menu bar / system tray app that starts with your computer
+- A **"Copy text"** pop-up appears beside the pill if there's no text box to type into
 - Local **History** tab, so a dictation is never lost even if typing fails
 
 ## Privacy by design
@@ -51,6 +53,7 @@ Privacy isn't a setting in Kural. It's the architecture.
 | **Your voice** | Transcribed on-device, only while the key is held. Never recorded to disk, never uploaded. |
 | **Your text** | Typed into your app. Optional local history with automatic deletion (off / 1 / 7 / 30 days). |
 | **Date of birth** | Used once for an 18+ age check, then discarded. Only "age confirmed" is kept. |
+| **Personal dictionary** | Stored on-device only. Learns from a short window after each dictation; only the corrected word is kept. |
 | **Clipboard** | Restored after typing; dictated text is flagged so clipboard-history tools don't keep it. |
 | **Everything else** | No accounts, analytics, telemetry or ads. One click deletes all local data. |
 
@@ -106,7 +109,7 @@ On first launch, Windows downloads its speech model once (about 150 to 250 MB). 
 </details>
 
 ## Roadmap
-- [ ] Custom vocabulary (names, brands, jargon) in the app
+- [x] Personal dictionary that learns your words
 - [ ] Tone presets by app (casual for chat, formal for email)
 - [ ] Indian languages and code-mixed speech (Tamil, Hindi, Malayalam + English)
 - [ ] Apple notarisation and Windows code signing
