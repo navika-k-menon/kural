@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="../../releases/latest"><img alt="Download" src="https://img.shields.io/badge/Download-Mac%20%7C%20Windows-3A111C?style=for-the-badge"></a>
+  <img alt="Learning project" src="https://img.shields.io/badge/Learning%20project-Mac%20%7C%20Windows-3A111C?style=for-the-badge">
   <img alt="Privacy" src="https://img.shields.io/badge/Voice%20data-never%20leaves%20your%20device-3A111C?style=for-the-badge">
 </p>
 
@@ -18,11 +18,15 @@
 
 Tools like Wispr Flow and Superwhisper made voice typing fast, but they are paid subscriptions and most send your voice to the cloud. I wanted something **free, fast, and private by design**, where the speech engine, the text clean-up and the history all live on your own machine. Kural is the result: a native Mac app and a Windows app, built from scratch.
 
+Kural is a personal learning project, not a product. I built it to understand how AI tools work end to end, and how the risks they create (privacy, consent, data retention, security) can be designed out and controlled from the start. I also designed its name, logo and full brand identity.
+
 ## See it in action
 
-| Onboarding | Home | History | The listening pill |
-|---|---|---|---|
-| ![Onboarding](screenshots/onboarding.png) | ![Home](screenshots/home.png) | ![History](screenshots/history.png) | ![Pill](screenshots/pill.png) |
+<p align="center"><img src="assets/what-you-say.png" alt="What you say versus what Kural types" width="520"></p>
+
+| Onboarding | Home | The listening pill |
+|---|---|---|
+| ![Onboarding](screenshots/onboarding.png) | ![Home](screenshots/home.png) | ![Pill](screenshots/pill.png) |
 
 ## Features
 
@@ -88,36 +92,21 @@ flowchart LR
 - **Fail-safe design:** timeouts and watchdogs mean the app never hangs; if typing fails, your words go to the clipboard and history
 - **Tested pipeline:** a shared text-processing engine with a regression test suite, plus automated build, package and self-test on every change
 
-## Download
+## Can I use it?
 
-Get the latest version from [**Releases**](../../releases/latest).
+Kural isn't available to download. It's a learning project, so this page is here to show how it works and the decisions behind it rather than to distribute the app. If you're curious about something specific, or would like a walkthrough, feel free to get in touch.
 
-| Platform | Requirements |
-|---|---|
-| **Mac** | Apple silicon (M1 or newer), macOS 26 or newer |
-| **Windows** | Windows 10 or 11, 64-bit, 8 GB RAM recommended |
-
-<details>
-<summary><b>First-time install notes</b></summary>
-
-Kural is an early release and isn't yet notarised by Apple or signed for Microsoft SmartScreen, so your computer will ask you to confirm the first time:
-
-- **Mac:** open Kural, click **Done** on the warning, then go to **System Settings > Privacy & Security** and click **Open Anyway**.
-- **Windows:** on "Windows protected your PC", click **More info**, then **Run anyway**.
-
-On first launch, Windows downloads its speech model once (about 150 to 250 MB). After that, Kural works offline.
-</details>
+**Runs on:** Mac (Apple silicon, macOS 26 or newer) and Windows 10 or 11.
 
 ## Roadmap
 - [x] Personal dictionary that learns your words
 - [ ] Tone presets by app (casual for chat, formal for email)
 - [ ] Indian languages and code-mixed speech (Tamil, Hindi, Malayalam + English)
-- [ ] Apple notarisation and Windows code signing
 
 ## About
 
-Designed and built by **Navika Menon** (B.Tech CSE, AI & ML). I'm interested in privacy engineering and AI risk, and Kural is my exploration of how useful AI tools can be built so that they respect the people who use them.
+Designed, built and branded by **Navika Menon** (B.Tech CSE, AI & ML). I'm interested in privacy engineering and AI risk, and Kural is my exploration of how useful AI tools can be built so that they respect the people who use them.
 
-The source code is private. If you're a recruiter, investor or collaborator and would like a walkthrough, get in touch.
+The source code is private. If you'd like a walkthrough, get in touch.
 
 <sub>© 2026 Navika Menon. All rights reserved. Kural is provided as is. See the [Privacy Policy](PRIVACY.md).</sub>
